@@ -39,7 +39,7 @@ export default function Calculator() {
     return (
         <div className={styles.main}>
             <h1>React Calculator</h1>
-            <input value={expr} />
+            <input value={expr} type="text" />
             {val ? <div>{val}</div> : null}
             <div className={styles.calcy}>
                 <button className={styles.characters} onClick={(event) => clickHandler(event)}>7</button>
