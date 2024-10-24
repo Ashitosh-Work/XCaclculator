@@ -19,17 +19,17 @@ export default function Calculator() {
     const evaluateHandler = () => {
         try {
             if (expr.length === 0) {
-                setVal("ERROR");
+                setVal("Error");
             }
             else if (isNaN(expr[expr.length - 1])) {
-                setVal("ERROR")
+                setVal("Error")
             }
             else {
                 setVal(eval(expr).toString());
             }
         }
         catch {
-            setVal("ERROR")
+            setVal("Error")
         }
 
 
